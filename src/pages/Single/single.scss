@@ -1,0 +1,86 @@
+.single {
+  display: flex;
+  .single-container {
+    overflow: hidden;
+    flex: 6;
+    .top {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+      .left {
+        flex: 1;
+        padding: 20px;
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        position: relative;
+        .edit-btn {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 5px;
+          font-size: 12px;
+          color: #7451f8;
+          background-color: #7551f818;
+          cursor: pointer;
+          border-radius: 0 0 0 5px;
+        }
+        .item {
+          display: flex;
+          gap: 20px;
+          .item-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          .details {
+            .item-title {
+              margin-bottom: 10px;
+              color: #555;
+            }
+            .detail-item {
+              margin-bottom: 10px;
+              font-size: 14px;
+              .item-key {
+                font-weight: bold;
+                color: gray;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        flex: 2;
+      }
+    }
+    .bottom {
+      padding: 20px;
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      margin: 10px 20px;
+    }
+    .title {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: lightgray;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .sidebar {
+      display: none;
+    }
+    .responsive {
+      display: block;
+    }
+    .top {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 410px) {
+    .left {
+      .item {
+        display: block !important;
+        word-break: break-word;
+      }
+    }
+  }
+}

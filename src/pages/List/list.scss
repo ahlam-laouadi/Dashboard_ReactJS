@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  width: 100%;
+  .list-container {
+    flex: 6;
+  }
+  @media screen and (max-width: 1200px) {
+    .sidebar {
+      display: none;
+    }
+    .responsive {
+      display: block;
+    }
+  }
+}
