@@ -36,7 +36,7 @@ const Single = () => {
                 </div>
                 <div className="detail-item">
                   <span className="item-key">Address:</span>
-                  <span className="item-key">39 St - Rabat</span>
+                  <span className="item-key">Rabat</span>
                 </div>
                 <div className="detail-item">
                   <span className="item-key">Country:</span>
